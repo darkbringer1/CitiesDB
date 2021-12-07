@@ -107,9 +107,8 @@
 		D83CA8D4275F986B006B4E32 /* CitiesDB */ = {
 			isa = PBXGroup;
 			children = (
-				D83CA8D5275F986B006B4E32 /* AppDelegate.swift */,
-				D83CA8D7275F986B006B4E32 /* SceneDelegate.swift */,
 				D83CA909275F9AB2006B4E32 /* Views */,
+				D83CA917275F9C1A006B4E32 /* Delegates */,
 				D83CA8E1275F986D006B4E32 /* Assets.xcassets */,
 				D83CA8E3275F986D006B4E32 /* LaunchScreen.storyboard */,
 				D83CA8E6275F986D006B4E32 /* Info.plist */,
@@ -152,6 +151,15 @@
 				D83CA90D275F9AC3006B4E32 /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		D83CA917275F9C1A006B4E32 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA8D5275F986B006B4E32 /* AppDelegate.swift */,
+				D83CA8D7275F986B006B4E32 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
