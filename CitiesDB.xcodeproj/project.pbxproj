@@ -23,6 +23,18 @@
 		D83CA920275F9CB6006B4E32 /* CitiesDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA91F275F9CB6006B4E32 /* CitiesDataResponse.swift */; };
 		D83CA923275F9CC3006B4E32 /* CitiesServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA922275F9CC3006B4E32 /* CitiesServiceProvider.swift */; };
 		D83CA927275F9CDD006B4E32 /* EndpointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA926275F9CDD006B4E32 /* EndpointManager.swift */; };
+		D83CA92B275FA6DC006B4E32 /* CustomImageViewComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA92A275FA6DC006B4E32 /* CustomImageViewComponentData.swift */; };
+		D83CA92D275FA6F5006B4E32 /* CustomImageViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA92C275FA6F5006B4E32 /* CustomImageViewComponent.swift */; };
+		D83CA92F275FA70F006B4E32 /* CustomImageViewComponentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA92E275FA70F006B4E32 /* CustomImageViewComponentContainer.swift */; };
+		D83CA934275FA7BA006B4E32 /* CollectionDisplayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA933275FA7BA006B4E32 /* CollectionDisplayerView.swift */; };
+		D83CA936275FA7CD006B4E32 /* CollectionDisplayerViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA935275FA7CD006B4E32 /* CollectionDisplayerViewData.swift */; };
+		D83CA938275FA85F006B4E32 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA937275FA85F006B4E32 /* MainCollectionViewCell.swift */; };
+		D83CA93B275FA894006B4E32 /* MainCollectionViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA93A275FA894006B4E32 /* MainCollectionViewData.swift */; };
+		D83CA93D275FA8B4006B4E32 /* MainCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA93C275FA8B4006B4E32 /* MainCollectionView.swift */; };
+		D83CA940275FA92F006B4E32 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA93F275FA92F006B4E32 /* LoadingCell.swift */; };
+		D83CA943275FA994006B4E32 /* DataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA942275FA994006B4E32 /* DataProviderProtocol.swift */; };
+		D83CA946275FA9B9006B4E32 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA945275FA9B9006B4E32 /* UIView+Extension.swift */; };
+		D83CA949275FA9F7006B4E32 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA948275FA9F7006B4E32 /* ImageCacheManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +75,18 @@
 		D83CA91F275F9CB6006B4E32 /* CitiesDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesDataResponse.swift; sourceTree = "<group>"; };
 		D83CA922275F9CC3006B4E32 /* CitiesServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesServiceProvider.swift; sourceTree = "<group>"; };
 		D83CA926275F9CDD006B4E32 /* EndpointManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointManager.swift; sourceTree = "<group>"; };
+		D83CA92A275FA6DC006B4E32 /* CustomImageViewComponentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageViewComponentData.swift; sourceTree = "<group>"; };
+		D83CA92C275FA6F5006B4E32 /* CustomImageViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageViewComponent.swift; sourceTree = "<group>"; };
+		D83CA92E275FA70F006B4E32 /* CustomImageViewComponentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageViewComponentContainer.swift; sourceTree = "<group>"; };
+		D83CA933275FA7BA006B4E32 /* CollectionDisplayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDisplayerView.swift; sourceTree = "<group>"; };
+		D83CA935275FA7CD006B4E32 /* CollectionDisplayerViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDisplayerViewData.swift; sourceTree = "<group>"; };
+		D83CA937275FA85F006B4E32 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		D83CA93A275FA894006B4E32 /* MainCollectionViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewData.swift; sourceTree = "<group>"; };
+		D83CA93C275FA8B4006B4E32 /* MainCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionView.swift; sourceTree = "<group>"; };
+		D83CA93F275FA92F006B4E32 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		D83CA942275FA994006B4E32 /* DataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderProtocol.swift; sourceTree = "<group>"; };
+		D83CA945275FA9B9006B4E32 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D83CA948275FA9F7006B4E32 /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +139,7 @@
 		D83CA8D4275F986B006B4E32 /* CitiesDB */ = {
 			isa = PBXGroup;
 			children = (
+				D83CA928275FA6A3006B4E32 /* Components */,
 				D83CA924275F9CCB006B4E32 /* Utilities */,
 				D83CA919275F9C9B006B4E32 /* DataOps */,
 				D83CA909275F9AB2006B4E32 /* Views */,
@@ -175,6 +200,8 @@
 		D83CA919275F9C9B006B4E32 /* DataOps */ = {
 			isa = PBXGroup;
 			children = (
+				D83CA947275FA9EE006B4E32 /* Managers */,
+				D83CA941275FA97B006B4E32 /* DataProviderProtocol */,
 				D83CA921275F9CBB006B4E32 /* ServiceProviders */,
 				D83CA91A275F9C9F006B4E32 /* Models */,
 			);
@@ -217,6 +244,7 @@
 		D83CA924275F9CCB006B4E32 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D83CA944275FA9AF006B4E32 /* Extensions */,
 				D83CA925275F9CD1006B4E32 /* EndpointManager */,
 			);
 			path = Utilities;
@@ -228,6 +256,94 @@
 				D83CA926275F9CDD006B4E32 /* EndpointManager.swift */,
 			);
 			path = EndpointManager;
+			sourceTree = "<group>";
+		};
+		D83CA928275FA6A3006B4E32 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA930275FA748006B4E32 /* MainCollectionViewComponents */,
+				D83CA929275FA6B0006B4E32 /* CustomImageViewComponent */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D83CA929275FA6B0006B4E32 /* CustomImageViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA92A275FA6DC006B4E32 /* CustomImageViewComponentData.swift */,
+				D83CA92C275FA6F5006B4E32 /* CustomImageViewComponent.swift */,
+				D83CA92E275FA70F006B4E32 /* CustomImageViewComponentContainer.swift */,
+			);
+			path = CustomImageViewComponent;
+			sourceTree = "<group>";
+		};
+		D83CA930275FA748006B4E32 /* MainCollectionViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA939275FA886006B4E32 /* CollectionView */,
+				D83CA931275FA754006B4E32 /* MainCollectionViewCell */,
+				D83CA932275FA79B006B4E32 /* CollectionDisplayerViewComponents */,
+				D83CA93E275FA922006B4E32 /* LoadingCell */,
+			);
+			path = MainCollectionViewComponents;
+			sourceTree = "<group>";
+		};
+		D83CA931275FA754006B4E32 /* MainCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA937275FA85F006B4E32 /* MainCollectionViewCell.swift */,
+			);
+			path = MainCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		D83CA932275FA79B006B4E32 /* CollectionDisplayerViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA933275FA7BA006B4E32 /* CollectionDisplayerView.swift */,
+				D83CA935275FA7CD006B4E32 /* CollectionDisplayerViewData.swift */,
+			);
+			path = CollectionDisplayerViewComponents;
+			sourceTree = "<group>";
+		};
+		D83CA939275FA886006B4E32 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA93A275FA894006B4E32 /* MainCollectionViewData.swift */,
+				D83CA93C275FA8B4006B4E32 /* MainCollectionView.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		D83CA93E275FA922006B4E32 /* LoadingCell */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA93F275FA92F006B4E32 /* LoadingCell.swift */,
+			);
+			path = LoadingCell;
+			sourceTree = "<group>";
+		};
+		D83CA941275FA97B006B4E32 /* DataProviderProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA942275FA994006B4E32 /* DataProviderProtocol.swift */,
+			);
+			path = DataProviderProtocol;
+			sourceTree = "<group>";
+		};
+		D83CA944275FA9AF006B4E32 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA945275FA9B9006B4E32 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D83CA947275FA9EE006B4E32 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA948275FA9F7006B4E32 /* ImageCacheManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,15 +484,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				D83CA8E0275F986B006B4E32 /* CitiesDB.xcdatamodeld in Sources */,
+				D83CA92D275FA6F5006B4E32 /* CustomImageViewComponent.swift in Sources */,
 				D83CA910275F9AC3006B4E32 /* HomeViewModel.swift in Sources */,
+				D83CA938275FA85F006B4E32 /* MainCollectionViewCell.swift in Sources */,
 				D83CA90E275F9AC3006B4E32 /* HomeViewBuilder.swift in Sources */,
+				D83CA92F275FA70F006B4E32 /* CustomImageViewComponentContainer.swift in Sources */,
 				D83CA8D6275F986B006B4E32 /* AppDelegate.swift in Sources */,
 				D83CA927275F9CDD006B4E32 /* EndpointManager.swift in Sources */,
+				D83CA943275FA994006B4E32 /* DataProviderProtocol.swift in Sources */,
 				D83CA91E275F9CB2006B4E32 /* CitiesDataRequestModel.swift in Sources */,
+				D83CA934275FA7BA006B4E32 /* CollectionDisplayerView.swift in Sources */,
 				D83CA923275F9CC3006B4E32 /* CitiesServiceProvider.swift in Sources */,
+				D83CA93B275FA894006B4E32 /* MainCollectionViewData.swift in Sources */,
+				D83CA92B275FA6DC006B4E32 /* CustomImageViewComponentData.swift in Sources */,
 				D83CA920275F9CB6006B4E32 /* CitiesDataResponse.swift in Sources */,
+				D83CA946275FA9B9006B4E32 /* UIView+Extension.swift in Sources */,
 				D83CA8D8275F986B006B4E32 /* SceneDelegate.swift in Sources */,
 				D83CA90F275F9AC3006B4E32 /* HomeViewController.swift in Sources */,
+				D83CA936275FA7CD006B4E32 /* CollectionDisplayerViewData.swift in Sources */,
+				D83CA93D275FA8B4006B4E32 /* MainCollectionView.swift in Sources */,
+				D83CA949275FA9F7006B4E32 /* ImageCacheManager.swift in Sources */,
+				D83CA940275FA92F006B4E32 /* LoadingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
