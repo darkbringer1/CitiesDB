@@ -19,6 +19,10 @@
 		D83CA910275F9AC3006B4E32 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA90D275F9AC3006B4E32 /* HomeViewModel.swift */; };
 		D83CA913275F9B50006B4E32 /* BaseComponents in Frameworks */ = {isa = PBXBuildFile; productRef = D83CA912275F9B50006B4E32 /* BaseComponents */; };
 		D83CA916275F9B62006B4E32 /* DefaultNetworkOperationPackage in Frameworks */ = {isa = PBXBuildFile; productRef = D83CA915275F9B62006B4E32 /* DefaultNetworkOperationPackage */; };
+		D83CA91E275F9CB2006B4E32 /* CitiesDataRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA91D275F9CB2006B4E32 /* CitiesDataRequestModel.swift */; };
+		D83CA920275F9CB6006B4E32 /* CitiesDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA91F275F9CB6006B4E32 /* CitiesDataResponse.swift */; };
+		D83CA923275F9CC3006B4E32 /* CitiesServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA922275F9CC3006B4E32 /* CitiesServiceProvider.swift */; };
+		D83CA927275F9CDD006B4E32 /* EndpointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA926275F9CDD006B4E32 /* EndpointManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		D83CA90B275F9AC3006B4E32 /* HomeViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewBuilder.swift; sourceTree = "<group>"; };
 		D83CA90C275F9AC3006B4E32 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D83CA90D275F9AC3006B4E32 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D83CA91D275F9CB2006B4E32 /* CitiesDataRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesDataRequestModel.swift; sourceTree = "<group>"; };
+		D83CA91F275F9CB6006B4E32 /* CitiesDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesDataResponse.swift; sourceTree = "<group>"; };
+		D83CA922275F9CC3006B4E32 /* CitiesServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesServiceProvider.swift; sourceTree = "<group>"; };
+		D83CA926275F9CDD006B4E32 /* EndpointManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,8 @@
 		D83CA8D4275F986B006B4E32 /* CitiesDB */ = {
 			isa = PBXGroup;
 			children = (
+				D83CA924275F9CCB006B4E32 /* Utilities */,
+				D83CA919275F9C9B006B4E32 /* DataOps */,
 				D83CA909275F9AB2006B4E32 /* Views */,
 				D83CA917275F9C1A006B4E32 /* Delegates */,
 				D83CA8E1275F986D006B4E32 /* Assets.xcassets */,
@@ -160,6 +170,64 @@
 				D83CA8D7275F986B006B4E32 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		D83CA919275F9C9B006B4E32 /* DataOps */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA921275F9CBB006B4E32 /* ServiceProviders */,
+				D83CA91A275F9C9F006B4E32 /* Models */,
+			);
+			path = DataOps;
+			sourceTree = "<group>";
+		};
+		D83CA91A275F9C9F006B4E32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA91C275F9CA7006B4E32 /* ResponseModels */,
+				D83CA91B275F9CA2006B4E32 /* RequestModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D83CA91B275F9CA2006B4E32 /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA91D275F9CB2006B4E32 /* CitiesDataRequestModel.swift */,
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		D83CA91C275F9CA7006B4E32 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA91F275F9CB6006B4E32 /* CitiesDataResponse.swift */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		D83CA921275F9CBB006B4E32 /* ServiceProviders */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA922275F9CC3006B4E32 /* CitiesServiceProvider.swift */,
+			);
+			path = ServiceProviders;
+			sourceTree = "<group>";
+		};
+		D83CA924275F9CCB006B4E32 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA925275F9CD1006B4E32 /* EndpointManager */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D83CA925275F9CD1006B4E32 /* EndpointManager */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA926275F9CDD006B4E32 /* EndpointManager.swift */,
+			);
+			path = EndpointManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +371,10 @@
 				D83CA910275F9AC3006B4E32 /* HomeViewModel.swift in Sources */,
 				D83CA90E275F9AC3006B4E32 /* HomeViewBuilder.swift in Sources */,
 				D83CA8D6275F986B006B4E32 /* AppDelegate.swift in Sources */,
+				D83CA927275F9CDD006B4E32 /* EndpointManager.swift in Sources */,
+				D83CA91E275F9CB2006B4E32 /* CitiesDataRequestModel.swift in Sources */,
+				D83CA923275F9CC3006B4E32 /* CitiesServiceProvider.swift in Sources */,
+				D83CA920275F9CB6006B4E32 /* CitiesDataResponse.swift in Sources */,
 				D83CA8D8275F986B006B4E32 /* SceneDelegate.swift in Sources */,
 				D83CA90F275F9AC3006B4E32 /* HomeViewController.swift in Sources */,
 			);
