@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D83CA8D6275F986B006B4E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA8D5275F986B006B4E32 /* AppDelegate.swift */; };
 		D83CA8D8275F986B006B4E32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA8D7275F986B006B4E32 /* SceneDelegate.swift */; };
-		D83CA8DA275F986B006B4E32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA8D9275F986B006B4E32 /* ViewController.swift */; };
-		D83CA8DD275F986B006B4E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83CA8DB275F986B006B4E32 /* Main.storyboard */; };
 		D83CA8E0275F986B006B4E32 /* CitiesDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D83CA8DE275F986B006B4E32 /* CitiesDB.xcdatamodeld */; };
 		D83CA8E2275F986D006B4E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83CA8E1275F986D006B4E32 /* Assets.xcassets */; };
 		D83CA8E5275F986D006B4E32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83CA8E3275F986D006B4E32 /* LaunchScreen.storyboard */; };
 		D83CA8F0275F986E006B4E32 /* CitiesDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA8EF275F986E006B4E32 /* CitiesDBTests.swift */; };
 		D83CA8FB275F986E006B4E32 /* CitiesDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA8FA275F986E006B4E32 /* CitiesDBUITests.swift */; };
+		D83CA90E275F9AC3006B4E32 /* HomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA90B275F9AC3006B4E32 /* HomeViewBuilder.swift */; };
+		D83CA90F275F9AC3006B4E32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA90C275F9AC3006B4E32 /* HomeViewController.swift */; };
+		D83CA910275F9AC3006B4E32 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83CA90D275F9AC3006B4E32 /* HomeViewModel.swift */; };
+		D83CA913275F9B50006B4E32 /* BaseComponents in Frameworks */ = {isa = PBXBuildFile; productRef = D83CA912275F9B50006B4E32 /* BaseComponents */; };
+		D83CA916275F9B62006B4E32 /* DefaultNetworkOperationPackage in Frameworks */ = {isa = PBXBuildFile; productRef = D83CA915275F9B62006B4E32 /* DefaultNetworkOperationPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +42,6 @@
 		D83CA8D2275F986B006B4E32 /* CitiesDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitiesDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83CA8D5275F986B006B4E32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D83CA8D7275F986B006B4E32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D83CA8D9275F986B006B4E32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D83CA8DC275F986B006B4E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D83CA8DF275F986B006B4E32 /* CitiesDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CitiesDB.xcdatamodel; sourceTree = "<group>"; };
 		D83CA8E1275F986D006B4E32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D83CA8E4275F986D006B4E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,9 @@
 		D83CA8F6275F986E006B4E32 /* CitiesDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitiesDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83CA8FA275F986E006B4E32 /* CitiesDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesDBUITests.swift; sourceTree = "<group>"; };
 		D83CA8FC275F986E006B4E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83CA90B275F9AC3006B4E32 /* HomeViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewBuilder.swift; sourceTree = "<group>"; };
+		D83CA90C275F9AC3006B4E32 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D83CA90D275F9AC3006B4E32 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83CA916275F9B62006B4E32 /* DefaultNetworkOperationPackage in Frameworks */,
+				D83CA913275F9B50006B4E32 /* BaseComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,8 +109,7 @@
 			children = (
 				D83CA8D5275F986B006B4E32 /* AppDelegate.swift */,
 				D83CA8D7275F986B006B4E32 /* SceneDelegate.swift */,
-				D83CA8D9275F986B006B4E32 /* ViewController.swift */,
-				D83CA8DB275F986B006B4E32 /* Main.storyboard */,
+				D83CA909275F9AB2006B4E32 /* Views */,
 				D83CA8E1275F986D006B4E32 /* Assets.xcassets */,
 				D83CA8E3275F986D006B4E32 /* LaunchScreen.storyboard */,
 				D83CA8E6275F986D006B4E32 /* Info.plist */,
@@ -131,6 +136,24 @@
 			path = CitiesDBUITests;
 			sourceTree = "<group>";
 		};
+		D83CA909275F9AB2006B4E32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA90A275F9AB5006B4E32 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D83CA90A275F9AB5006B4E32 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA90B275F9AC3006B4E32 /* HomeViewBuilder.swift */,
+				D83CA90C275F9AC3006B4E32 /* HomeViewController.swift */,
+				D83CA90D275F9AC3006B4E32 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +170,10 @@
 			dependencies = (
 			);
 			name = CitiesDB;
+			packageProductDependencies = (
+				D83CA912275F9B50006B4E32 /* BaseComponents */,
+				D83CA915275F9B62006B4E32 /* DefaultNetworkOperationPackage */,
+			);
 			productName = CitiesDB;
 			productReference = D83CA8D2275F986B006B4E32 /* CitiesDB.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +245,10 @@
 				Base,
 			);
 			mainGroup = D83CA8C9275F986B006B4E32;
+			packageReferences = (
+				D83CA911275F9B50006B4E32 /* XCRemoteSwiftPackageReference "BaseComponents" */,
+				D83CA914275F9B62006B4E32 /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */,
+			);
 			productRefGroup = D83CA8D3275F986B006B4E32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,7 +267,6 @@
 			files = (
 				D83CA8E5275F986D006B4E32 /* LaunchScreen.storyboard in Resources */,
 				D83CA8E2275F986D006B4E32 /* Assets.xcassets in Resources */,
-				D83CA8DD275F986B006B4E32 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +292,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D83CA8E0275F986B006B4E32 /* CitiesDB.xcdatamodeld in Sources */,
-				D83CA8DA275F986B006B4E32 /* ViewController.swift in Sources */,
+				D83CA910275F9AC3006B4E32 /* HomeViewModel.swift in Sources */,
+				D83CA90E275F9AC3006B4E32 /* HomeViewBuilder.swift in Sources */,
 				D83CA8D6275F986B006B4E32 /* AppDelegate.swift in Sources */,
 				D83CA8D8275F986B006B4E32 /* SceneDelegate.swift in Sources */,
+				D83CA90F275F9AC3006B4E32 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +332,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D83CA8DB275F986B006B4E32 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D83CA8DC275F986B006B4E32 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D83CA8E3275F986D006B4E32 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -597,6 +621,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D83CA911275F9B50006B4E32 /* XCRemoteSwiftPackageReference "BaseComponents" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/darkbringer1/BaseComponents.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.5;
+			};
+		};
+		D83CA914275F9B62006B4E32 /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/darkbringer1/DefaultNetworkOperationPackage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D83CA912275F9B50006B4E32 /* BaseComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D83CA911275F9B50006B4E32 /* XCRemoteSwiftPackageReference "BaseComponents" */;
+			productName = BaseComponents;
+		};
+		D83CA915275F9B62006B4E32 /* DefaultNetworkOperationPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D83CA914275F9B62006B4E32 /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */;
+			productName = DefaultNetworkOperationPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D83CA8DE275F986B006B4E32 /* CitiesDB.xcdatamodeld */ = {
