@@ -12,12 +12,10 @@ class ContentDisplayerViewData: GenericDataProtocol {
     
     var type: GenericRowType? = nil
     
-    private(set) var imageData: CustomImageViewComponentData
     private(set) var name: String
     
-    init(imageData: CustomImageViewComponentData,
+    init(
          name: String) {
-        self.imageData = imageData
         self.name = name
     }
     

@@ -99,8 +99,8 @@ extension MainCollectionView: UICollectionViewDelegate, UICollectionViewDataSour
 
 extension MainCollectionView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (UIScreen.main.bounds.width - 40) / 2
-        let height = (UIScreen.main.bounds.height) / 3
+        let width = (UIScreen.main.bounds.width - 40)
+        let height = (UIScreen.main.bounds.height) / 16
         return CGSize(width: width, height: height)
     }
 }

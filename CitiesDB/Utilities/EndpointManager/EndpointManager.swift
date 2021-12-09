@@ -29,12 +29,15 @@ enum EndpointManager {
     enum Paths: GenericValueProtocol {
         typealias Value = String
         
+        case countries
         case cities
         
         var value: String {
             switch self {
                 case .cities:
                     return "geo/cities"
+                case .countries:
+                    return "geo/countries"
             }
         }
     }
