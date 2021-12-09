@@ -9,14 +9,14 @@ import Foundation
 
 // MARK: - CitiesDataResponse
 struct CitiesDataResponse: Codable {
-    let data: [City]?
-    let links: [Link]?
-    let metadata: Metadata?
+    let data: [City]
+    let links: [Link]
+    let metadata: Metadata
 }
 
 // MARK: - Datum
 struct City: Codable {
-    let id: Int?
+    let id: Int
     let wikiDataID, type, name, country: String?
     let countryCode, region: String?
     let regionCode: RegionCode?
@@ -27,6 +27,16 @@ struct City: Codable {
         case wikiDataID = "wikiDataId"
         case type, name, country, countryCode, region, regionCode, latitude, longitude
     }
+}
+
+// MARK: - Link
+struct Link: Codable {
+    let rel, href: String?
+}
+
+// MARK: - Metadata
+struct Metadata: Codable {
+    let currentOffset, totalCount: Int
 }
 
 enum RegionCode: Codable {
@@ -57,12 +67,3 @@ enum RegionCode: Codable {
     }
 }
 
-// MARK: - Link
-struct Link: Codable {
-    let rel, href: String?
-}
-
-// MARK: - Metadata
-struct Metadata: Codable {
-    let currentOffset, totalCount: Int?
-}
