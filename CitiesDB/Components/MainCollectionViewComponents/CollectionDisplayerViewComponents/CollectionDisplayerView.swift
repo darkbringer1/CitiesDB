@@ -31,7 +31,7 @@ class CollectionDisplayerView: GenericBaseView<GenericDataProtocol> {
     }()
     
     private lazy var mainStackView: UIStackView = {
-        let stack = UIStackView(arrangedSubviews: [imageContainer, infoView])
+        let stack = UIStackView(arrangedSubviews: [infoView])
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.isUserInteractionEnabled = true
         stack.alignment = .center
@@ -41,13 +41,13 @@ class CollectionDisplayerView: GenericBaseView<GenericDataProtocol> {
         return stack
     }()
     
-    private lazy var imageContainer: CustomImageViewComponentContainer = {
-        let image = CustomImageViewComponentContainer()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.layer.cornerRadius = 2
-        image.clipsToBounds = true
-        return image
-    }()
+//    private lazy var imageContainer: CustomImageViewComponentContainer = {
+//        let image = CustomImageViewComponentContainer()
+//        image.translatesAutoresizingMaskIntoConstraints = false
+//        image.layer.cornerRadius = 2
+//        image.clipsToBounds = true
+//        return image
+//    }()
     
     private lazy var infoView: UILabel = {
         let info = UILabel()
@@ -93,7 +93,7 @@ class CollectionDisplayerView: GenericBaseView<GenericDataProtocol> {
     override func loadDataView() {
         super.loadDataView()
         guard let data = returnData() as? ContentDisplayerViewData else { return }
-        imageContainer.setData(by: data.imageData)
+//        imageContainer.setData(by: data.imageData)
         infoView.text = data.name
     }
     
