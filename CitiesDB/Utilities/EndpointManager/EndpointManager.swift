@@ -31,6 +31,7 @@ enum EndpointManager {
         
         case countries
         case cities
+        case country(String)
         
         var value: String {
             switch self {
@@ -38,6 +39,8 @@ enum EndpointManager {
                     return "geo/cities"
                 case .countries:
                     return "geo/countries"
+                case .country(let id):
+                    return "geo/countries/\(id)"
             }
         }
     }
