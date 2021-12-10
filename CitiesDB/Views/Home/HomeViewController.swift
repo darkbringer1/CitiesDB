@@ -48,6 +48,13 @@ class HomeViewController: BaseViewController<HomeViewModel> {
                     return
             }
         }
+        viewModel.subscribeDetailViewState { [weak self] data in
+            self?.fireDetailView(with: data)
+        }
     }
     
+    private func fireDetailView(with data: CountryDetailRequest) {
+        let viewController = DetailViewBuilder.build(with: data)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }

@@ -15,10 +15,12 @@ class HomeViewModel {
     
     private var dataFormatter: HomeViewDataFormatterProtocol
     private var homeViewState: ViewStateBlock?
+    private var detailViewState: ((CountryDetailRequest) -> Void)?
     
     init(dataFormatter: HomeViewDataFormatterProtocol) {
         self.dataFormatter = dataFormatter
     }
+    
     
     func getData() {
         homeViewState?(.loading)
@@ -26,6 +28,10 @@ class HomeViewModel {
             guard let urlRequest = try? CountriesServiceProvider(request: getCountriesDataRequest()).returnUrlRequest(headerType: .rapidApi("d8f665eb3fmsh2bb4d003a73d548p15c094jsnede373d832cb")) else { return }
             fireApiCall(urlRequest: urlRequest, completion: countriesDataListener)
         }
+    }
+    
+    func subscribeDetailViewState(with completion: @escaping (CountryDetailRequest) -> Void) {
+        detailViewState = completion
     }
     
     func subscribeHomeViewState(with completion: @escaping ViewStateBlock) {
@@ -74,6 +80,7 @@ extension HomeViewModel: DataProviderProtocol {
     
     func selectedItem(at index: Int) {
         print("tapped index: \(index)")
+        detailViewState?(CountryDetailRequest(countryId: dataFormatter.getItemId(at: index)))
     }
     
     func getMoreData() {
