@@ -31,7 +31,6 @@ class HomeViewDataFormatter: HomeViewDataFormatterProtocol {
     
     func setData(with response: CountriesDataResponse) {
         self.data = response
-        self.paginationData.links = response.links
         self.paginationData.resultCount = response.data.count
         self.list.append(contentsOf: response.data)
     }
